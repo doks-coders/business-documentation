@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Initialise Application | Sharpdetail Codebase</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="This is an analysis of the SharpDetail Codebase for future integrations">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/Sharpdetail-Codebase/assets/css/0.styles.8d2b356e.css" as="style"><link rel="preload" href="/Sharpdetail-Codebase/assets/js/app.40115f0a.js" as="script"><link rel="preload" href="/Sharpdetail-Codebase/assets/js/2.9a2dc7bc.js" as="script"><link rel="preload" href="/Sharpdetail-Codebase/assets/js/12.78906337.js" as="script"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/10.7833bc54.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/11.8f55e511.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/13.7c033819.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/14.4c4ffa79.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/3.2c80fa4d.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/4.7cb587c0.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/5.0023bf4c.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/7.da886956.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/8.e849e537.js"><link rel="prefetch" href="/Sharpdetail-Codebase/assets/js/9.dda5bb24.js">
+    <link rel="stylesheet" href="/Sharpdetail-Codebase/assets/css/0.styles.8d2b356e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Sharpdetail-Codebase/" class="home-link router-link-active"><!----> <span class="site-name">Sharpdetail Codebase</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Sharpdetail-Codebase/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/Sharpdetail-Codebase/introduction/" class="nav-link router-link-active">
+  Introduction
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Sharpdetail-Codebase/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/Sharpdetail-Codebase/introduction/" class="nav-link router-link-active">
+  Introduction
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Introduction</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Sharpdetail-Codebase/introduction/" aria-current="page" class="sidebar-link">Boogie Backend</a></li><li><a href="/Sharpdetail-Codebase/introduction/initialise-application.html" class="sidebar-link">Initialisation</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="initialise-application"><a href="#initialise-application" class="header-anchor">#</a> Initialise Application</h1> <p>To retrieve specific key-value objects, you can use the <code>key</code> query to specify the property you want to use for querying, and the <code>select</code> query to specify the values you want to filter. In this case, you want to retrieve the object(s) whose Nutritional deficiencies is equal to [2277,2040,1846].</p> <h2 id=""><a href="#" class="header-anchor">#</a></h2> <h2 id="request"><a href="#request" class="header-anchor">#</a> Request</h2> <ul><li>HTTP Method: <code>GET</code></li> <li>accept : <code>application/json</code></li> <li>Content Type : <code>application/json</code></li> <li>URL: <code>http://localhost:3000/end-drug-data/data-select?title=1-annual-number-of-deaths-by-cause&amp;key=nutritional deficiencies&amp;select=[2277,2040,1846]</code></li></ul> <h2 id="query-parameters"><a href="#query-parameters" class="header-anchor">#</a> Query Parameters</h2> <table><thead><tr><th>Property</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td><code>title</code></td> <td>any</td> <td>true</td> <td>This parameter is used to select the title of the spreadsheet</td></tr> <tr><td><code>key</code></td> <td>any</td> <td>true</td> <td>Selects the Column</td></tr> <tr><td><code>select</code></td> <td>any</td> <td>true</td> <td>Selects the Specific values in the Column</td></tr></tbody></table> <h2 id="request-example"><a href="#request-example" class="header-anchor">#</a> Request example</h2> <div class="language-js extra-class"><pre class="language-js"><code>curl <span class="token operator">-</span><span class="token constant">X</span> <span class="token constant">GET</span> \ 
+ <span class="token string">'http://localhost:3000/end-drug-data/data-select?title=1-annual-number-of-deaths-by-cause&amp;key=Nutritional deficiencies&amp;select=[2277,2040,1846]'</span> \ 
+<span class="token operator">-</span><span class="token constant">H</span> <span class="token string">'accept : application/json'</span> \ 
+<span class="token operator">-</span><span class="token constant">H</span> <span class="token string">'Content-Type : application/json'</span> \ 
+</code></pre></div><h2 id="expected-responses"><a href="#expected-responses" class="header-anchor">#</a> Expected Responses:</h2></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/Sharpdetail-Codebase/assets/js/app.40115f0a.js" defer></script><script src="/Sharpdetail-Codebase/assets/js/2.9a2dc7bc.js" defer></script><script src="/Sharpdetail-Codebase/assets/js/12.78906337.js" defer></script>
+  </body>
+</html>
